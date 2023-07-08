@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p id="use_var"></p>
+    <p id="use_let"></p>
+    <p id="nothing"></p>
+    <script>
+        //use var
+        var x1 = 5;
+        var y1 = 6;
+        var z1 = x1 + y1;
+        document.getElementById("use_var").innerHTML = "this value of z using var variable is : "+z1;
+
+        //use let
+        let x2 = 5;
+        let y2 = 6;
+        let z2 = x2 + y2;
+        document.getElementById("use_let").innerHTML = "this value of z using var variable is : "+z2;
+
+        //use nothing
+        x3 = 5;
+        y3 = 6;
+        z3 = x1 + y1;
+        document.getElementById("nothing").innerHTML = "this value of z using var variable is : "+z3;
+
+        //using const
+        //mutate const using object
+        const mahasiswa = {
+            nama: "iqbal",
+            kelas: 384, 
+        }
+        mahasiswa.fakulty="informatika"
+        console.log(mahasiswa)
+        
+        //mutate const using array
+        const pelajar = ['bambank', 'joko']
+        pelajar.push('dwi');
+        console.log(pelajar);
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
