@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p1 id = "demo"></p1>
+    <p id = "demo2"></p>
+
+    <script>
+        //create object
+        const car = {
+            type : "Honda",
+            model : "Civic",
+            color : "Black",
+            spesification: function() {
+                return "Type : "+this.type+", Model : "+this.model+", color : "+car.color;
+            }
+        }
+        document.getElementById('demo').innerHTML="Car spesification is : "+car.spesification()
+
+        document.getElementById("demo2").innerHTML = "The car type is "+car.type+' Car model is '+ car.model
+        +"car color is "+ car.color;
+    </script>
+</body>
+</html>
